@@ -74,4 +74,21 @@ public class ItemDAO {
         }
        
     }
+    
+    public boolean updatePriceItem(Item i){
+        try {
+            sql = "UPDATE item SET price = ? WHERE iditem = ?;";
+            con = C.cb();
+            stmt = con.prepareCall(sql);
+            stmt.setDouble(1, i.getPrice());
+            stmt.setInt(2, i.getId());
+            stmt.executeUpdate();
+            C.db();
+            return true;
+        } catch (SQLException | ClassNotFoundException ex) {
+            Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+       
+    }
 }

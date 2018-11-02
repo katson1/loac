@@ -91,4 +91,23 @@ public class ItemDAO {
         }
        
     }
+    
+    
+    
+    //////DELETE
+    public boolean deleteItem(int id){
+        try {
+            sql = "DELETE FROM item WHERE iditem = ?";
+            con = C.cb();
+            stmt = con.prepareStatement(sql);
+            stmt.setInt(1, id);
+            stmt.execute();
+            C.db();
+            return true;
+        } catch (ClassNotFoundException | SQLException ex) {
+            Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+        
+    }
 }

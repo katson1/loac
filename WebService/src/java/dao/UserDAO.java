@@ -187,7 +187,7 @@ public class UserDAO {
     
     
     
-    public boolean deleteUsers(int id ){
+    public boolean deleteUser(int id ){
         try {
             sql = "DELETE FROM user WHERE iduser = ?";
             con = C.cb();

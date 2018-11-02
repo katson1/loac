@@ -75,7 +75,7 @@ public class UserWS {
     @Path("/delete/{iduser}")
     public String deletarUsuario(@PathParam("iduser")int iduser){
         UserDAO dao = new UserDAO();
-        if(dao.deleteUsers(iduser)){
+        if(dao.deleteUser(iduser)){
             return "true";
         }else{
             return "false";

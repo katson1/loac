@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/myacc"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/myacc" />
+        <item
+            android:id="@+id/my_orders"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/myorders" />
+        <item
+            android:id="@+id/shop_cart"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/shopcart" />
+        <item
+            android:id="@+id/wish"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/wishlist" />
+        <item
+            android:id="@+id/fav_stores"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/favstores" />
+        <item
+            android:id="@+id/msg"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/msg" />
+
+    </group>
+
+    <item android:title="@string/more">
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/suggestions"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/suggestions" />
+            <item
+                android:id="@+id/sac"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/sac" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/about" />
+        </menu>
+    </item>
+
+</menu>

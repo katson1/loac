@@ -6,31 +6,31 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_home"
             android:title="@string/home" />
         <item
-            android:id="@+id/myacc"
-            android:icon="@drawable/ic_menu_gallery"
+            android:id="@+id/my_acc"
+            android:icon="@drawable/ic_myacc"
             android:title="@string/myacc" />
         <item
             android:id="@+id/my_orders"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_myorders"
             android:title="@string/myorders" />
         <item
             android:id="@+id/shop_cart"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_shopcart"
             android:title="@string/shopcart" />
         <item
             android:id="@+id/wish"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_wish"
             android:title="@string/wishlist" />
         <item
             android:id="@+id/fav_stores"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_favstores"
             android:title="@string/favstores" />
         <item
             android:id="@+id/msg"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_msg"
             android:title="@string/msg" />
 
     </group>
@@ -39,19 +39,19 @@
         <menu>
             <item
                 android:id="@+id/settings"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_settings"
                 android:title="@string/settings" />
             <item
                 android:id="@+id/suggestions"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_suggestions"
                 android:title="@string/suggestions" />
             <item
                 android:id="@+id/sac"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_sac"
                 android:title="@string/sac" />
             <item
                 android:id="@+id/about"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_about"
                 android:title="@string/about" />
         </menu>
     </item>

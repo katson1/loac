@@ -9,7 +9,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-;import loac.com.loacapp.fragments.home;
+;import loac.com.loacapp.fragments.about;
+import loac.com.loacapp.fragments.favstores;
+import loac.com.loacapp.fragments.home;
+import loac.com.loacapp.fragments.msg;
+import loac.com.loacapp.fragments.myacc;
+import loac.com.loacapp.fragments.myorders;
+import loac.com.loacapp.fragments.sac;
+import loac.com.loacapp.fragments.settings;
+import loac.com.loacapp.fragments.shopcart;
+import loac.com.loacapp.fragments.suggestions;
+import loac.com.loacapp.fragments.wish;
 
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -82,26 +92,56 @@ public class MenuActivity extends AppCompatActivity
                     .replace(R.id.content_frame
                             , new home())
                     .commit();
-        } else if (id == R.id.myacc) {
-
+        } else if (id == R.id.my_acc) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new myacc())
+                    .commit();
         } else if (id == R.id.my_orders) {
-
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new myorders())
+                    .commit();
         } else if (id == R.id.shop_cart) {
-
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new shopcart())
+                    .commit();
         } else if (id == R.id.wish) {
-
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new wish())
+                    .commit();
         } else if (id == R.id.fav_stores) {
-
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new favstores())
+                    .commit();
         } else if (id == R.id.msg) {
-
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new msg())
+                    .commit();
         } else if (id == R.id.settings) {
-
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new settings())
+                    .commit();
         } else if (id == R.id.suggestions) {
-
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new suggestions())
+                    .commit();
         } else if (id == R.id.sac) {
-
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new sac())
+                    .commit();
         } else if (id == R.id.about) {
-
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new about())
+                    .commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

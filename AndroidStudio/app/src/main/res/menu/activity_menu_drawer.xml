@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group android:id="@+id/menu_top"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/home"
             android:icon="@drawable/ic_home"
@@ -32,11 +33,11 @@
             android:id="@+id/msg"
             android:icon="@drawable/ic_msg"
             android:title="@string/msg" />
-
     </group>
 
-    <item android:title="@string/more">
-        <menu>
+    <group android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item android:title="@string/more">
             <item
                 android:id="@+id/settings"
                 android:icon="@drawable/ic_settings"
@@ -53,7 +54,7 @@
                 android:id="@+id/about"
                 android:icon="@drawable/ic_about"
                 android:title="@string/about" />
-        </menu>
-    </item>
+        </item>
+    </group>
 
 </menu>

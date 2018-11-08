@@ -84,6 +84,12 @@ public class MenuActivity extends AppCompatActivity
         android.app.FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.home) {
+            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+            setSupportActionBar(toolbar);
+            toolbar.setTitle("Inicio Temporario");
+
+            ativarNavBar();
+
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame
                             , new home())

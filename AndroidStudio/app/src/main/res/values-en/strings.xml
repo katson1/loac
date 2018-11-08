@@ -24,4 +24,9 @@
     <string name="suggestions">Sugestões</string>
     <string name="sac">Customer Service</string>
     <string name="about">Sobre Nós</string>
+
+    <string name="version">Versão</string>
+    <string name="evaluate">Avalie-nos no Google Play</string>
+    <string name="confignotifications">Configurações de Notificação</string>
+    <string name="versionnumber">(0.2.1)</string>
 </resources>

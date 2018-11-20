@@ -84,7 +84,8 @@ public class settings extends Fragment implements DialogInterface.OnClickListene
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
 
-            View rootView = LayoutInflater.from(context).inflate(R.layout.settings_listview, parent, false);
+            View rootView = LayoutInflater.from(context).inflate(R.layout.settings_listview,
+                    parent, false);
 
             TextView text1 = (TextView) rootView.findViewById(R.id.setting_text1);
             TextView text2 = (TextView) rootView.findViewById(R.id.setting_text2);

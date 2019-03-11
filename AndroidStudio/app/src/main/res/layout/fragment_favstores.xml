@@ -8,7 +8,7 @@
     tools:context=".fragments.favstores">
 
     <ListView
-        android:id="@+id/myorders_listview"
+        android:id="@+id/favstores_listview"
         android:layout_width="match_parent"
         android:layout_height="0dp"/>
 </android.support.constraint.ConstraintLayout>

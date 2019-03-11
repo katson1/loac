@@ -1,6 +1,5 @@
 package loac.com.loacapp.fragments;
 
-import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -84,7 +82,7 @@ public class settings extends Fragment implements DialogInterface.OnClickListene
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
 
-            View rootView = LayoutInflater.from(context).inflate(R.layout.settings_listview,
+            View rootView = LayoutInflater.from(context).inflate(R.layout.listview_settings_layout,
                     parent, false);
 
             TextView text1 = (TextView) rootView.findViewById(R.id.setting_text1);
